@@ -1,10 +1,10 @@
 import * as Styled from './styles';
 
-export type CardProps = {
+export type FooterProps = {
   title?: string;
 };
 
-export const Card = ({ title }: CardProps) => {
+export const Footer = ({ title }: FooterProps) => {
   return (
     <Styled.Wrapper>
       <h1>Oi</h1>
