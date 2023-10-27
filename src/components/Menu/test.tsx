@@ -2,9 +2,9 @@ import { screen } from '@testing-library/react';
 import { renderTheme } from '../../styles/render-theme';
 import { Menu, MenuProps } from '.';
 
-const props: MenuProps = {
-  title: 'any',
-};
+import mock from './mock';
+
+const props: MenuProps = mock;
 
 describe('<Menu />', () => {
   it('should render', () => {

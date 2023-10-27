@@ -4,11 +4,14 @@ import { Footer, FooterProps } from '.';
 export default {
   title: 'Footer',
   component: Footer,
-} as Meta<FooterProps>;
+  args: {
+    footerHtml: `<p><a href="https://beacons.page/otaviomiranda">Foi Feito com ❤ por Otávio Miranda</a></p>`,
+  },
+} as Meta;
 
 export const Template: Story<FooterProps> = (args) => {
   return (
-    <div>
+    <div style={{ marginTop: '200px' }}>
       <Footer {...args} />
     </div>
   );

@@ -2,13 +2,14 @@ import * as Styled from './styles';
 
 export type BioListProps = {
   title?: string;
+  list: string[];
 };
 
-export const BioList = ({ title }: BioListProps) => {
+export const BioList = ({ title, list }: BioListProps) => {
   return (
     <Styled.Wrapper>
-      <h1>Oi</h1>
-      <p>{title}</p>
+      {title}
+      <Styled.List>{list}</Styled.List>
     </Styled.Wrapper>
   );
 };
