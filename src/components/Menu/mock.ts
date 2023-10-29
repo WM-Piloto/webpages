@@ -1,4 +1,4 @@
-import { MenuProps } from '../MenuLink';
+import { MenuProps } from '.';
 
 export default {
   links: [

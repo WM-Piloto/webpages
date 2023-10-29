@@ -3,7 +3,8 @@ import { renderTheme } from '../../styles/render-theme';
 import { BioList, BioListProps } from '.';
 
 const props: BioListProps = {
-  title: 'any',
+  title: 'string',
+  list: [],
 };
 
 describe('<BioList />', () => {

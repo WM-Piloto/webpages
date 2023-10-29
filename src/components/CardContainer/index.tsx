@@ -5,10 +5,5 @@ export type CardContainerProps = {
 };
 
 export const CardContainer = ({ title }: CardContainerProps) => {
-  return (
-    <Styled.Wrapper>
-      <h1>Oi</h1>
-      <p>{title}</p>
-    </Styled.Wrapper>
-  );
+  return <Styled.Wrapper>{title}</Styled.Wrapper>;
 };
