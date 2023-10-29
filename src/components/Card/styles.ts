@@ -3,22 +3,37 @@ import styled, { css } from 'styled-components';
 export const Wrapper = styled.div`
   ${({ theme }) => css`
   display: flex;
-  border: 2rem dotted ${theme.colors.darkerGray};
+  `}
+`;
 
-  .CardLeft {
-    flex-flow: row;
-  }
+export const CardLeft = styled.div`
+  ${({ theme }) => css`
+  display: flex;
+  border: 2rem dashed ${theme.colors.darkerGray};
+  flex-direction: row;
+  `}
+`;
 
-  .CardRight {
-    flex-flow: row-reverse;
-}
+export const CardRight = styled.div`
+  ${({ theme }) => css`
+  display: flex;
+  border: 2rem dashed ${theme.colors.darkerGray};
+  flex-direction: row-reverse;
+  `}
+`;
 
-  .CardUp {
-    flex-flow: column;
-}
+export const CardUp = styled.div`
+  ${({ theme }) => css`
+  display: flex;
+  border: 2rem dashed ${theme.colors.darkerGray};
+  flex-direction: column;
+  `}
+`;
 
-  .CardDown {
-    flex-flow: column-reverse;
-}
+export const CardDown = styled.div`
+  ${({ theme }) => css`
+  display: flex;
+  border: 2rem dashed ${theme.colors.darkerGray};
+  flex-direction: column-reverse;
   `}
 `;

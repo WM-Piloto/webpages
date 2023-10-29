@@ -10,9 +10,15 @@ export type CardProps = {
 
 export const Card = ({ cardName, cardLogo, cardText }: CardProps) => {
   return (
-    <Styled.Wrapper className="CardLeft">
-      <LogoLink link="/" text={cardName} srcImg={cardLogo} />
-      <HtmlContent html={cardText} />
+    <Styled.Wrapper>
+      <Styled.CardUp>
+        <LogoLink link="/" text={cardName} srcImg={cardLogo} />
+        <HtmlContent html={cardText} />
+      </Styled.CardUp>
+      {/* <Styled.CardRight>
+        <LogoLink link="/" text={cardName} srcImg={cardLogo} />
+        <HtmlContent html={cardText} />
+      </Styled.CardRight> */}
     </Styled.Wrapper>
   );
 };
