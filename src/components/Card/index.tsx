@@ -6,19 +6,19 @@ export type CardProps = {
   cardName: string;
   cardLogo: string;
   cardText: string;
+  className?: 'cardRight' | 'cardDown' | 'cardLeft' | 'cardUp';
 };
 
-export const Card = ({ cardName, cardLogo, cardText }: CardProps) => {
+export const Card = ({
+  cardName,
+  cardLogo,
+  cardText,
+  className = 'cardRight',
+}: CardProps) => {
   return (
-    <Styled.Wrapper>
-      <Styled.CardUp>
-        <LogoLink link="/" text={cardName} srcImg={cardLogo} />
-        <HtmlContent html={cardText} />
-      </Styled.CardUp>
-      {/* <Styled.CardRight>
-        <LogoLink link="/" text={cardName} srcImg={cardLogo} />
-        <HtmlContent html={cardText} />
-      </Styled.CardRight> */}
+    <Styled.Wrapper className={className}>
+      <LogoLink link="/" text={cardName} srcImg={cardLogo} />
+      <HtmlContent html={cardText} />
     </Styled.Wrapper>
   );
 };

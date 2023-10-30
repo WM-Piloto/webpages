@@ -9,6 +9,5 @@ export const Container = styled.a`
   > img {
     width: 15rem;
     height: 15rem;
-    border-radius: 50%;
   }
 `;
