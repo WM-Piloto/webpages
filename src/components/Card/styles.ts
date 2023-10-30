@@ -1,34 +1,64 @@
 import styled, { css } from 'styled-components';
+import { Container as LogoLinkStyles } from '../LogoLink/styles';
 
 const cardType = {
   cardRight: (theme) => css`
-    display: flex;
-    border: 0.5rem dashed ${theme.colors.darkerGray};
     flex-direction: row-reverse;
+    ${LogoLinkStyles} {
+    img {
+      margin-left: 3rem;
+    }
+  }
   `,
 
   cardDown: (theme) => css`
-    display: flex;
-    border: 0.5rem dashed ${theme.colors.darkerGray};
-    flex-direction: column;
+    flex-direction: column-reverse;
+    ${LogoLinkStyles} {
+    img {
+      margin-top: 3rem;
+    }
+  }
 `,
 
   cardLeft: (theme) => css`
-    display: flex;
-    border: 0.5rem dashed ${theme.colors.darkerGray};
     flex-direction: row;
+    ${LogoLinkStyles} {
+    img {
+      margin-right: 3rem;
+    }
+  }
 `,
 
   cardUp: (theme) => css`
-    display: flex;
-    border: 0.5rem dashed ${theme.colors.darkerGray};
-    flex-direction: column-reverse;
+    flex-direction: column;
+    ${LogoLinkStyles} {
+    img {
+      margin-bottom: 3rem;
+    }
+  }
 `,
 };
 
 export const Wrapper = styled.div`
   ${({ theme, className }) => css`
-  ${cardType[className](theme)};
+  display: flex;
+  border: 0.5rem dashed ${theme.colors.darkerGray};
+  margin: auto;
+  padding: 3rem;
+  font-size: ${theme.font.sizes.medium};
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  ${cardType[className](theme)};s
+
+  ${LogoLinkStyles} {
+    img {
+      width: auto;
+      height: auto;
+    }
+  }
+
+
 
   `}
 `;
