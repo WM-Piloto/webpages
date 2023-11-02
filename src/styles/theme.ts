@@ -38,5 +38,10 @@ export const theme = {
   sizes: {
     max: '96rem',
     content: '80rem',
+    col_1: '1',
+    col_2: '2',
+    col_3: '3',
+    col_4: '4',
+    col_5: '5',
   },
 } as const;

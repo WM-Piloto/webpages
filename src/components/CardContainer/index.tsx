@@ -1,18 +1,14 @@
-import styled, { css } from 'styled-components';
+import * as Styled from './styles';
 
 export type CardContainerProps = {
-  format: '4x2' | '';
+  title?: string;
 };
 
-export const CardContainer = styled.div`
-${({ theme }) => css`
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto;
-  border: 3px solid blue;
-
-  @media ${theme.media.lteMedium} {
-    display: flex;
-  }
-`}
-`;
+export const CardContainer = ({ title }: CardContainerProps) => {
+  return (
+    <Styled.CardContainer>
+      <h1>Oi</h1>
+      <p>{title}</p>
+    </Styled.CardContainer>
+  );
+};
