@@ -1,0 +1,39 @@
+.grid {
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+   grid-template-columns: 1fr 2fr 2fr 1fr;
+   grid-template-areas: 'up right right down'
+      'up left left down';
+   border: 2px solid red;
+   padding: 5px;
+   align-itens: center;
+   justify-content: center;
+}
+
+.up {
+   border: 1px solid blue;
+   grid-area: up;
+   width: 1fr;
+   height: 2fr;
+}
+
+.right {
+   border: 1px solid orange;
+   grid-area: right;
+   width: 2fr;
+   height: 1fr;
+}
+
+.left {
+   border: 1px solid green;
+   grid-area: left;
+   width: 2fr;
+   height: 1fr;
+}
+
+.down {
+   border: 1px solid black;
+   grid-area: down;
+   width: 1fr;
+   height: 2fr;
+}
