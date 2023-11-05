@@ -4,6 +4,7 @@ import { Container as LogoLinkStyles } from '../LogoLink/styles';
 const cardType = {
   cardRight: (theme) => css`
     flex-direction: row-reverse;
+    grid-area: cardRight;
     ${LogoLinkStyles} {
     img {
       margin-left: 3rem;
@@ -13,6 +14,7 @@ const cardType = {
 
   cardDown: (theme) => css`
     flex-direction: column-reverse;
+    grid-area: cardDown;
     ${LogoLinkStyles} {
     img {
       margin-top: 3rem;
@@ -22,6 +24,7 @@ const cardType = {
 
   cardLeft: (theme) => css`
     flex-direction: row;
+    grid-area: cardLeft;
     ${LogoLinkStyles} {
     img {
       margin-right: 3rem;
@@ -31,6 +34,7 @@ const cardType = {
 
   cardUp: (theme) => css`
     flex-direction: column;
+    grid-area: cardUp;
     ${LogoLinkStyles} {
     img {
       margin-bottom: 3rem;

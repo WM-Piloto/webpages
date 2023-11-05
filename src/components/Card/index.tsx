@@ -6,7 +6,7 @@ export type CardProps = {
   cardName: string;
   cardLogo: string;
   cardText: string;
-  className: 'cardRight' | 'cardDown' | 'cardLeft' | 'cardUp';
+  className?: 'cardRight' | 'cardDown' | 'cardLeft' | 'cardUp';
 };
 
 export const Card = ({
