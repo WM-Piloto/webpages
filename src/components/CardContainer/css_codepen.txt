@@ -6,7 +6,7 @@
       'up left left down';
    border: 2px solid red;
    padding: 5px;
-   align-itens: center;
+   align-items: center;
    justify-content: center;
 }
 

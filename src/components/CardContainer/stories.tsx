@@ -1,18 +1,18 @@
 import { Meta, Story } from '@storybook/react/types-6-0';
 import { CardContainer, CardContainerProps } from '.';
 
-import mock from '../CardContainer/mock';
+import mock from './mock';
+import mockDev from './mockDev';
+import mockGames from './mockGames';
+import mockArt from './mockArt';
+import mockBooks from './mockBooks';
 
 export default {
   title: 'CardContainer',
   component: CardContainer,
-  args: mock,
+  args: mockArt,
 } as Meta<CardContainerProps>;
 
 export const Template: Story<CardContainerProps> = (args) => {
-  return (
-    <div>
-      <CardContainer className={'portfolio'} cardList={...args}></CardContainer>
-    </div>
-  );
+  return <CardContainer {...args} />;
 };

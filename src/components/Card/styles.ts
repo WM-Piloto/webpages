@@ -5,6 +5,8 @@ const cardType = {
   cardRight: (theme) => css`
     flex-direction: row-reverse;
     grid-area: cardRight;
+    width: 2fr;
+    height: 1fr;
     ${LogoLinkStyles} {
     img {
       margin-left: 3rem;
@@ -15,6 +17,8 @@ const cardType = {
   cardDown: (theme) => css`
     flex-direction: column-reverse;
     grid-area: cardDown;
+    width: 1fr;
+    height: 2fr;
     ${LogoLinkStyles} {
     img {
       margin-top: 3rem;
@@ -25,6 +29,8 @@ const cardType = {
   cardLeft: (theme) => css`
     flex-direction: row;
     grid-area: cardLeft;
+    width: 2fr;
+    height: 1fr;
     ${LogoLinkStyles} {
     img {
       margin-right: 3rem;
@@ -35,6 +41,8 @@ const cardType = {
   cardUp: (theme) => css`
     flex-direction: column;
     grid-area: cardUp;
+    width: 1fr;
+    height: 2fr;
     ${LogoLinkStyles} {
     img {
       margin-bottom: 3rem;
@@ -47,7 +55,6 @@ export const Wrapper = styled.div`
   ${({ theme, className }) => css`
   display: flex;
   border: 0.5rem dashed ${theme.colors.darkerGray};
-  margin: auto;
   padding: 3rem;
   font-size: ${theme.font.sizes.medium};
   align-items: center;
