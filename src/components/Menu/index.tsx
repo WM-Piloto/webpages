@@ -18,7 +18,7 @@ export type MenuProps = {
   logo: string;
 };
 
-export const Menu = ({ links, pageName, logo }: MenuProps) => {
+export const Menu = ({ links = [], pageName, logo }: MenuProps) => {
   const [menuVisible, setMenuVisible] = useState(false);
 
   const handleOpenCloseMenu = (event: React.MouseEvent) => {
@@ -39,7 +39,7 @@ export const Menu = ({ links, pageName, logo }: MenuProps) => {
         {!menuVisible && <MenuIcon aria-label="Open menu" />}
       </Styled.OpenClose>
 
-      <Styled.Wrapper menuVisible={menuVisible}>
+      <Styled.Wrapper menuVisible={menuVisible} aria-hidden={!menuVisible}>
         <Styled.Nav>
           <Styled.Logo>
             <LogoLink link="/" text={pageName} srcImg={logo} />
