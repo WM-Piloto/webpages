@@ -10,7 +10,7 @@ import mockBooks from './mockBooks';
 export default {
   title: 'CardContainer',
   component: CardContainer,
-  args: mockArt,
+  args: mock,
 } as Meta<CardContainerProps>;
 
 export const Template: Story<CardContainerProps> = (args) => {
