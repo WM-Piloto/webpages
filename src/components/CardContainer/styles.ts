@@ -13,7 +13,7 @@ const gridType = {
 
     .cardRight {
       img:hover {
-        border-top-right-radius: 50%;
+        border-radius: 50%;
         opacity: 80%;
         filter: grayscale(100%);
       }
@@ -31,7 +31,7 @@ const gridType = {
 
     .cardLeft {
       img:hover {
-        border-bottom-left-radius: 50%;
+        border-radius: 50%;
         opacity: 80%;
         filter: sepia(150%);
       }
@@ -49,9 +49,7 @@ const gridType = {
 
     .cardUp {
       img:hover {
-        border-top-right-radius: 50%;
-        border-top-left-radius: 50%;
-
+        border-radius: 50%;
         opacity: 80%;
         filter: brightness(150%);
       }
@@ -59,8 +57,7 @@ const gridType = {
 
     .cardDown {
       img:hover {
-        border-bottom-right-radius: 50%;
-        border-bottom-left-radius: 50%;
+        border-radius: 50%;
         opacity: 80%;
         filter: contrast(150%)
       }
