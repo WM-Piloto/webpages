@@ -18,7 +18,17 @@ const gridType = {
         filter: grayscale(100%);
       }
 
-      p {}
+      p span {
+        transition: all 800ms ease-in-out;
+      }
+
+      p:hover span {
+        color: red;
+        text-shadow: 2px 2px 4px #000000;
+        font-size: calc(${theme.font.sizes.small} + 0.3rem);
+
+      }
+
       @media ${theme.media.lteMedium} {
         flex-direction: column-reverse;
         img {
