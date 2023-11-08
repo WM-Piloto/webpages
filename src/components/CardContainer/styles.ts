@@ -22,11 +22,9 @@ const gridType = {
         transition: all 800ms ease-in-out;
       }
 
-      p:hover span {
+      &:hover p span {
         color: red;
-        text-shadow: 2px 2px 4px #000000;
-        font-size: calc(${theme.font.sizes.small} + 0.3rem);
-
+        text-shadow: 2px 2px 2px #000000;
       }
 
       @media ${theme.media.lteMedium} {
