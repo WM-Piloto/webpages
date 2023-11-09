@@ -10,9 +10,13 @@ export type FooterProps = {
 export const Footer = ({ footerHtml }: FooterProps) => {
   return (
     <Styled.Container>
-      <InstagramAlt />
-      <LogoLinkedin />
       <HtmlContent html={footerHtml} />
+      <Styled.SocialMedia href="/">
+        <InstagramAlt aria-label="instagram" />
+      </Styled.SocialMedia>
+      <Styled.SocialMedia href="/">
+        <LogoLinkedin aria-label="linkedin" />
+      </Styled.SocialMedia>
     </Styled.Container>
   );
 };

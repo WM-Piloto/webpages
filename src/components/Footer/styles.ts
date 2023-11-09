@@ -4,6 +4,10 @@ import { Container as HtmlContentStyles } from '../HtmlContent/styles';
 export const Container = styled.footer`
   ${({ theme }) => css`
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    /* display: table; */
     border-top: 0.1rem solid ${theme.colors.mediumGray};
 
     ${HtmlContentStyles} {
@@ -17,5 +21,15 @@ export const Container = styled.footer`
       }
 
     }
+  `}
+`;
+
+export const SocialMedia = styled.a`
+  ${({ theme }) => css`
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    color: ${theme.colors.darkerGray};
+
   `}
 `;
