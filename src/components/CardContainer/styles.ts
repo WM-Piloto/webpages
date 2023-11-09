@@ -6,26 +6,26 @@ const gridType = {
     grid-template-areas: 'cardUp cardRight cardRight cardDown'
                          'cardUp cardLeft cardLeft cardDown';
 
-    img {
+    ${LogoLinkStyles} img {
       border-radius: 10%;
       transition: all 300ms ease-in-out;
     }
 
     .cardRight {
-      img:hover {
-        border-radius: 50%;
-        opacity: 80%;
+
+      img {
         filter: grayscale(100%);
       }
 
-      p span {
-        transition: all 800ms ease-in-out;
+      &:hover img {
+        filter: grayscale(0%);
       }
 
-      &:hover p span {
-        color: red;
-        text-shadow: 2px 2px 2px #000000;
+      img:hover {
+        border-radius: 50%;
+        filter: brightness(110%);
       }
+
 
       @media ${theme.media.lteMedium} {
         flex-direction: column-reverse;
@@ -41,7 +41,8 @@ const gridType = {
       img:hover {
         border-radius: 50%;
         opacity: 80%;
-        filter: sepia(150%);
+        filter: contrast(150%)
+
       }
 
       p {}
@@ -59,7 +60,7 @@ const gridType = {
       img:hover {
         border-radius: 50%;
         opacity: 80%;
-        filter: brightness(150%);
+        filter: saturate(150%);
       }
     }
 
@@ -67,8 +68,18 @@ const gridType = {
       img:hover {
         border-radius: 50%;
         opacity: 80%;
-        filter: contrast(150%)
+        filter: sepia(150%);
       }
+
+      p span {
+        transition: all 800ms ease-in-out;
+      }
+
+      &:hover p span {
+        color: red;
+        text-shadow: 2px 2px 2px #000000;
+      }
+
 
     }
 
@@ -143,8 +154,8 @@ ${({ className, theme }) => css`
   justify-content: flex;
   gap: 2rem;
 
+
   ${gridType[className](theme)}
-  border: 3px solid blue;
 
   @media ${theme.media.lteMedium} {
     display: flex;

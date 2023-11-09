@@ -6,6 +6,7 @@ export type Cards = {
   cardName: string;
   cardLogo: string;
   cardText: string;
+  cardLink: string;
   className?: 'cardRight' | 'cardDown' | 'cardLeft' | 'cardUp';
 };
 
@@ -27,6 +28,7 @@ export const CardContainer = ({
           cardName={card.cardName}
           cardLogo={card.cardLogo}
           cardText={card.cardText}
+          cardLink={card.cardLink}
         />
       ))}
     </Styled.CardContainer>
