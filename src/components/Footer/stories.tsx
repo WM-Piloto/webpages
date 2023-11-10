@@ -5,7 +5,7 @@ export default {
   title: 'Footer',
   component: Footer,
   args: {
-    footerHtml: `<p><a href="http://www.google.com.br">Teste de Footer</a></p>`,
+    footerHtml: `<p><a href="http://www.google.com.br">WM Piloto ©</a></p>`,
   },
 } as Meta;
 
